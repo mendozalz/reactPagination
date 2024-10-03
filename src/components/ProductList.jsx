@@ -7,10 +7,9 @@ const ProductList = () => {
   const [productsPerPage, setProductsPerPage] = useState(4);
   const [currentPage, setCurrentPage] = useState(2);
 
+  /* Pilas aqui Victor */
   const lastProduct = productsPerPage * currentPage;
-  console.log("El ultimo producto es", lastProduct);
   const firstProduct = lastProduct - productsPerPage;
-  console.log("El primer producto es", firstProduct);
 
   useEffect(() => {
     const fetchProducts = async () => {

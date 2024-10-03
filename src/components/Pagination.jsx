@@ -23,9 +23,9 @@ const Pagination = ({
     }
   }
 
-  const specificPage = (n) => {
-    setCurrentPage(n);
-  }
+  // const specificPage = (n) => {
+  //   setCurrentPage(n);
+  // }
 
   return (
     <nav className="mb-96">
@@ -57,7 +57,7 @@ const Pagination = ({
             <a
               href="#"
               className={`block size-8 rounded border border-gray-100 bg-white text-center leading-8 text-gray-900 ${page === currentPage ? 'bg-black text-red-500' : ''}`}
-              onClick={(e)=> { e. preventDefault(); specificPage(page)}}
+              onClick={(e)=> { e. preventDefault()}}
             >
               {page}
             </a>
