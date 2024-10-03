@@ -56,7 +56,7 @@ const Pagination = ({
             <li key={page}>
             <a
               href="#"
-              className={`block size-8 rounded border border-gray-100 bg-white text-center leading-8 text-gray-900 ${page === currentPage ? 'bg-black text-red-500' : ''}`}
+              className={`block size-8 rounded  text-center leading-8 text-gray-900 ${page === currentPage ? 'bg-black text-white' : ''}`}
               onClick={(e)=> { e. preventDefault()}}
             >
               {page}
